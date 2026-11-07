@@ -1,61 +1,111 @@
-# SHN-MEDIAPIPE
-![Project Cover](assets/cover.jpeg)
-#  [Your Project Name]
+# 🌫️ FogMirror — Interactive Hand-Controlled Fog Interface
 
-### 💡 What's the idea?
-[Tell us what you built and what it does. Keep it short!]
+![FogMirror Project Cover](assets/cover.jpeg)
 
-### 🌐 Check it out!
-- **Live Website:** [Drop your link here / N/A]
-- **GitHub Repo:** [Drop your repository link here]
+**FogMirror** is an interactive computer vision project that explores a touchless way of interacting with a virtual fog-covered surface using real-time hand tracking.
 
-### 🛠️ What did you use?
-[Tech stack, tools, frameworks, libraries, etc.]
+Using a webcam and Google's MediaPipe Hand Landmarker, FogMirror detects hand movements and tracks the index fingertip, allowing users to interact with the virtual surface through natural gestures.
 
-### 👥 The Humans Behind It
-- [Name – GitHub Username]
-- [Name – GitHub Username]
+## 💡 What's the Idea?
 
-### ⚙️ Hardware Corner
-[What hardware did you use? / N/A]
+Imagine a fog-covered mirror where you don't need to touch the glass to interact with it.
 
-### 📸 Show Us What You Built!
-[Add screenshots, photos, GIFs or demo video links here.]
+FogMirror brings this concept into a digital environment. By combining computer vision, hand landmark detection, and real-time image processing, the project aims to simulate the experience of clearing fog using your finger.
 
-### ✨ Cool Things It Does
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
+The goal is to create an immersive, responsive, and interactive touchless interface.
 
----
+## 🌐 Check It Out!
 
-**Built with curiosity at Saturday Hack Night 💜**# 🚀 [Your Project Name]
+- **Live Website:** N/A — Desktop application
+- **GitHub Repository:** [https://github.com/AgentRed77/SHN-MEDIAPIPE.git]
+- **Original Project Inspiration:** SHNN-MEDIAPIPE
 
-### 💡 What's the idea?
-[Tell us what you built and what it does. Keep it short!]
+## 🛠️ What Did You Use?
 
-### 🌐 Check it out!
-- **Live Website:** [Drop your link here / N/A]
-- **GitHub Repo:** [Drop your repository link here]
+| Technology | Purpose |
+|---|---|
+| Python 3.13.5 | Core programming language |
+| OpenCV | Camera capture and image processing |
+| MediaPipe 1.2.2 | Real-time hand landmark detection |
+| NumPy | Matrix operations and mask processing |
+| Git & GitHub | Version control |
 
-### 🛠️ What did you use?
-[Tech stack, tools, frameworks, libraries, etc.]
+## 👩‍💻 The Human Behind It
 
-### 👥 The Humans Behind It
-- [Name – GitHub Username]
-- [Name – GitHub Username]
+- **Medhajith M** — [@AgentRed77](https://github.com/AgentRed77)
 
-### ⚙️ Hardware Corner
-[What hardware did you use? / N/A]
+Built through experimentation, problem-solving, and continuous development.
 
-### 📸 Show Us What You Built!
-[Add screenshots, photos, GIFs or demo video links here.]
+## ⚙️ Hardware Corner
 
-### ✨ Cool Things It Does
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
+- Laptop / PC
+- Built-in or external USB webcam
+- Standard keyboard for application controls
 
----
+## ✨ Cool Things It Does
 
-**Built with curiosity at Saturday Hack Night 💜**
+- **Real-Time Hand Tracking:** Detects and tracks hands using MediaPipe.
+- **21 Hand Landmarks:** Identifies key points across the hand.
+- **Index Fingertip Detection:** Highlights Landmark 8 for precise interaction.
+- **Dual Coordinate Tracking:** Displays both pixel coordinates and normalized coordinates.
+- **Interactive Canvas Engine:** Uses continuous stroke interpolation and feathered alpha masks for smooth interaction.
+- **Real-Time Processing:** Designed for responsive camera-based interaction.
+- **Touchless Interaction:** Explores gesture-based control without physical contact.
+
+## 🏗️ Development Progress
+
+FogMirror is being developed incrementally through independent milestones.
+
+- [x] Phase 1 — Environment Setup
+- [x] Phase 2 — Camera Capture and Processing
+- [x] Phase 3 — Real-Time Hand Tracking
+- [x] Phase 4.1 — Configuration and Mask Canvas Engine
+- [ ] Phase 4.2 — Photorealistic Fog Generation and Blending
+- [ ] Phase 4.3 — Automated Fog Engine Verification
+- [ ] Phase 4.4 — Main Loop Integration
+
+*Development status will be updated as new milestones are completed and tested.*
+
+## 📸 Show Us What You Built!
+
+Screenshots, camera demonstrations, and project progress will be added here as development continues.
+
+## 🚀 Running the Project
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AgentRed77/SHN-MEDIAPIPE.git
+cd FogMirror
+```
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+python main.py
+```
+
+**Controls:**
+- Raise your hand to activate tracking.
+- Move your index finger to interact with the canvas.
+- Press `C` to clear/reset the surface.
+- Press `Q` or `ESC` to exit.
+
+## 💜 Acknowledgements
+
+Inspired by the collaborative spirit of Saturday Hack Night and built with curiosity, experimentation, and a passion for computer vision.
+
+**Built with curiosity. Driven by innovation. 💜**
