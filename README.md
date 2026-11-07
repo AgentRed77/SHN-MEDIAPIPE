@@ -1,5 +1,5 @@
 # SHN-MEDIAPIPE
-![Project Cover](assets/cover.png)
+![Project Cover](assets/cover.jpeg)
 #  [Your Project Name]
 
 ### 💡 What's the idea?
